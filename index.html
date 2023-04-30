@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Damascus E-Shopping Mall</title>
+    <link rel="stylesheet" href="css\styles.css">
+    
+    <script src="store.js" async></script>
+
+  </head>
+  <body>
+    <header>
+        <img src="images/logo1.png" alt="Damascus E-Shopping Mall" width="128" height="128">
+
+        <h1>Damascus E-Shopping Mall</h1>
+          <div class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="checkout.html">Checkout</a>
+            </div>
+          </div>
+    </header>
+    <main>
+      <section id="HOT Deals">
+        <h2>Hot Deals</h2>
+        <div class="product">
+          <img class="shop-item-image" src="images/katan.png" width="128" height="128" alt="Product 1">
+          <h3 class="shop-item-title">MSI Katana</h3>
+          <p>MSI Katana GF66 12UC Gaming Laptop, 15.6" FHD 144Hz IPS Display, Intel Core i5-12500H 2.5 GHz, 8GB RAM, 512GB SSD, 4GB NVIDIA RTX 3050, Eng-Arabic Keyboard, Win 11, Black</p>
+          <p><del>6500000.00</del> <strong class="shop-item-price">5400000.00 ل.س</strong></p>
+          <div class="shop-item-details">
+                     
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+        </div>
+        <div class="product">
+          <img class="shop-item-image" src="images/legion 5.jpg"  width="128" height="128" alt="Product 2">
+          <h3 class="shop-item-title">Lenovo Legion 5</h3>
+          <p>Lenovo Legion 5 15ARH7H Gaming Laptop, 15.6" FHD 165Hz IPS 300nits Display, AMD Ryzen 7 6800H, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 3060 6GB, RGB Backlit, ENG KB, Win 11, Storm Grey </p>
+          <p><del>7600000.00</del> <strong class="shop-item-price">5800000.00 ل.س</strong></p>
+          <div class="shop-item-details">
+                     
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+        </div>
+        <div class="product">
+          <img class="shop-item-image" src="images/macbook.png"   width="128" height="128" alt="Product 3">
+          <h3 class="shop-item-title">Apple MacBook Air 13"</h3>
+          <p>Apple MacBook Air 13" Retina Display Laptop, Apple M1 Chip with 8-Core CPU, 7 Core GPU, 8GB RAM, 256GB SSD, English Keyboard, Space Grey Color </p>
+          <p><del>10000000.00 </del> <strong class="shop-item-price">11000000.00 ل.س</strong></p>
+          <div class="shop-item-details">
+                     
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+        </div>
+      </section>
+      
+      
+    
+   
+      
+       
+      <section id="Coming Soon">
+
+          <h2>Coming Soon</h2>
+          <div class="product">
+            <img src="images/galaxybook.jpg" alt="Product 3">
+            <h3>Samsung Galaxy Book3 Ultra Laptop,</h3>
+           
+            <p>Available on May 12, 2023</p>
+          </div>
+          <div class="product">
+            <img src="images/surface.jpg" alt="Product 4">
+            <h3>Microsoft Surface Laptop 4</h3>
+           
+            <p>Available on May 2, 2023</p>
+
+          </div>
+       
+        
+      </section>
+
+      <section id="Products">
+        <div class="container">
+          <h2>Products</h2>
+          <ul class="products">
+            <li>   
+             
+              <a href="products.html#Apple" ><img src="images/APPLE.webp" width="256" height="64" alt="Brand 1"></a>
+              <h3>APPLE</h3>
+            </li>
+
+            <li>  
+              
+              <a href="products.html#MSI"><img src="images/MSI.webp" width="256" height="64" alt="Brand 2"></a>
+              <h3>MSI</h3>
+            </li>
+
+            <li>  
+                
+              
+              <a href="products.html#lenovo" > <img src="images/lenovo.webp"  width="256" height="64" alt="Brand 3"></a>
+              <h3>lenovo</h3>
+            </li>
+
+            <li>  
+              
+              <a href="products.html#Dell" ><img src="images/Dell.webp"  width="256" height="64" alt="Brand 4"></a>
+              <h3>Dell</h3>
+            </li>
+
+            <li> 
+              
+              <a href="products.html#SAMSUNG" ><img src="images/samsung.webp"  width="256" height="64" alt="Brand 5"></a>
+              <h3>Samsung</h3>
+
+            </li>
+
+            <li>
+               
+              <a href="products.html#asus" ><img src="images/asus.webp"  width="256" height="64" alt="Brand 5"></a>
+              <h3>ASUS</h3>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      
+    <h1>My Shopping Cart</h1>
+    <ul id="cartItems">
+        <!-- The shopping cart items will be dynamically added here using JavaScript -->
+    </ul>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+        
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">0.0 ل.س</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
+  
+    </main>
+    <footer>
+      <p>&copy; 2023 Damascus E-Shopping Mall. All rights reserved.</p>
+      <p>Contact: <a href="mailto:mohammadalialhamid@eshoppingmall.com">mohammadalialhamid@eshoppingmall.com</a></p>
+      <p>Contact: <a href="tel:+963938451008">+963938451008 (WhatsApp)</a></p>
+    </footer>
+  </body>
+</html>
